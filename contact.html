@@ -20,8 +20,8 @@
         <h1>聯絡我們</h1>
         <p>若有任何合作需求或產品諮詢，請填寫以下表單，我們將會有專人儘速與您聯繫。</p>
 
-        <!-- 請將下面的 action="https://formspree.io/f/你的Formspree表單ID" 換成你的 -->
-        <form action="https://formspree.io/f/mvkkqvva" method="POST" style="margin-top: 2rem;">
+        <!-- 請將 action 裡的 YOUR_FORMSPREE_ID 換成你在 Formspree 取得的專屬 ID 或網址 -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" style="margin-top: 2rem;">
             <div class="form-group">
                 <label for="user_name">姓名</label>
                 <input type="text" id="user_name" name="user_name" placeholder="請輸入您的姓名" required>
@@ -29,4 +29,25 @@
 
             <div class="form-group">
                 <label for="user_phone">電話</label>
-                <input type="tel" id="user_phone" name="user_phone" placeholder
+                <input type="tel" id="user_phone" name="user_phone" placeholder="例如：0912-345-678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_email">E-mail</label>
+                <input type="email" id="user_email" name="user_email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">聯絡內容</label>
+                <textarea id="message" name="message" placeholder="請填寫您的諮詢內容..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" id="submit-btn">送出訊息</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 創智科技 NovaTech Inc. 版權所有</p>
+    </footer>
+</body>
+</html>
